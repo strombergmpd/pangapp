@@ -631,8 +631,31 @@ h2 {
         padding: 40px 0;
     }
 
+    .hero-text {
+        text-align: center;
+    }
+
     .hero-text h1 {
         font-size: 32px;
+    }
+
+    .email-signup {
+        align-items: center;
+    }
+
+    .gdpr-group {
+        text-align: left;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    
+    .hero-features li {
+        margin-bottom: 0;
+        justify-content: center;
     }
 
     .features-header h2,
@@ -675,15 +698,6 @@ h2 {
 
     .social-link {
         justify-content: center;
-    }
-
-    .hero-features {
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .hero-features li {
-        margin-bottom: 0;
     }
 }
 

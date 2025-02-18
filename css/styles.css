@@ -625,10 +625,20 @@ h2 {
     .text-media-content,
     .reverse .text-media-content {
         grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .header .logo img {
+        height: 24px;
     }
 
     .hero {
         padding: 40px 0;
+    }
+
+    .hero-image {
+        margin: 0 auto;
+        max-width: 300px;
     }
 
     .hero-text {
@@ -640,7 +650,7 @@ h2 {
     }
 
     .email-signup {
-        align-items: center;
+        align-items: stretch;
     }
 
     .gdpr-group {
@@ -648,14 +658,17 @@ h2 {
     }
 
     .hero-features {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 16px;
         align-items: center;
+        justify-content: center;
     }
     
     .hero-features li {
         margin-bottom: 0;
         justify-content: center;
+        font-size: 14px;
     }
 
     .features-header h2,
@@ -671,11 +684,16 @@ h2 {
 
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 16px;
     }
 
     .feature-card {
-        padding: 32px;
+        padding: 24px 0;
+        background-color: transparent;
+    }
+
+    .feature-icon {
+        margin-bottom: 16px;
     }
 
     .footer-content {
@@ -721,6 +739,48 @@ h2 {
     .text-media .media-content {
         margin: 0 auto;
         max-width: 400px;
+    }
+
+    .email-signup input[type="email"] {
+        padding: 16px 20px;
+    }
+
+    .button {
+        width: 100%;
+        display: block;
+        padding: 16px 36px;
+    }
+
+    .features {
+        padding: 40px 0;
+    }
+
+    .calculator {
+        padding: 40px 0;
+    }
+
+    .calculator-header {
+        margin: 0 auto 40px;
+    }
+
+    .text-media {
+        padding: 40px 0;
+    }
+
+    .reverse.text-media {
+        padding: 40px 0;
+    }
+
+    .video-section {
+        padding: 40px 0;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-logo img {
+        height: 24px;
     }
 }
 

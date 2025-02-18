@@ -699,6 +699,29 @@ h2 {
     .social-link {
         justify-content: center;
     }
+
+    .text-media .text-content {
+        text-align: center;
+    }
+
+    .text-media .text-content ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-media .text-content li {
+        justify-content: center;
+    }
+
+    .text-media .text-content li::before {
+        margin-right: 8px;
+    }
+
+    .text-media .media-content {
+        margin: 0 auto;
+        max-width: 400px;
+    }
 }
 
 /* Calculator Section */

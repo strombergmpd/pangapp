@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Behandling av personuppgifter - Päng</title>
+    <link rel="icon" type="image/svg+xml" href="Assets/pang-favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <!-- Message Bar -->
+    <div class="message-bar">
+        <p>OBS! All data är 100% privat.</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
         <div class="container">
             <a href="/" class="logo">
-                <img src="Assets/pang-logo.svg" alt="Päng Logo">
+                <img src="Assets/Pang-logo-teal.svg" alt="Päng logo">
             </a>
             <a href="index.html" class="back-link">
-                ← Tillbaka till startsidan
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Tillbaka till startsidan
             </a>
         </div>
     </header>
     
-    <div class="notice-bar">
-        OBS. Vi samlar inte in någon ekonomisk data. Din ekonomi är privat.
-    </div>
-    
     <main class="content-page">
         <div class="container">
             <div class="content">
-                <h1>Din integritet är viktig för oss</h1>
+                <h1>Behandling av personuppgifter</h1>
                 <p>Vi värnar om din personliga integritet och säkerheten för de uppgifter du lagrar i vår app. Här kan du läsa om hur vi hanterar dina personuppgifter och vilka rättigheter du har som användare.</p>
 
                 <h2>Vilka personuppgifter samlas in?</h2>
@@ -39,29 +45,40 @@
 
                 <h2>Säkerhet</h2>
                 <p>All data lagras säkert på din enhet och endast du har tillgång till den.</p>
+
+                <h2>E-postmarknadsföring och Mailchimp</h2>
+                <p>För vår e-postmarknadsföring använder vi Mailchimp. När du registrerar dig för vårt nyhetsbrev lagras din e-postadress på Mailchimps servrar, inte hos oss. Mailchimp är en pålitlig plattform som följer GDPR och andra dataskyddslagar. Du kan läsa mer om hur Mailchimp hanterar dina personuppgifter på deras <a href="https://mailchimp.com/help/data-privacy/" target="_blank" rel="noopener noreferrer">policy-sida</a>.</p>
             </div>
         </div>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="footer-social">
-                <a href="https://x.com/MarcusStrmberg" class="social-link">
-                    <img src="Assets/x-icon.png" alt="X icon" class="social-icon">
-                    <span>Följ med på X</span>
-                </a>
-                <a href="https://www.linkedin.com/in/marcus-patrick-stromberg/" class="social-link">
-                    <img src="Assets/linkedin-icon.png" alt="LinkedIn icon" class="social-icon">
-                    <span>Följ mig på LinkedIn</span>
-                </a>
-                <a href="https://www.stromberg.design/" class="social-link">
-                    <img src="Assets/website-icon.png" alt="Website icon" class="social-icon">
-                    <span>Besök stromberg.design</span>
-                </a>
+            <div class="footer-logo">
+                <img src="Assets/pang-logo-white.svg" alt="Päng logo">
             </div>
-            <div class="footer-links">
-                <a href="privacy.html">Behandling av personuppgifter</a>
-                <a href="cookies.html">Cookies</a>
+            <div class="footer-disclaimer">
+                <p>Denna tjänst tillhandahåller endast information och verktyg för ekonomisk planering. Vi erbjuder inte finansiell rådgivning, och vi ansvarar inte för eventuella beslut baserade på den information som presenteras i appen. För personlig finansiell rådgivning, kontakta en licensierad rådgivare.</p>
+            </div>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://x.com/MarcusStrmberg" class="social-link">
+                        <img src="Assets/x-icon.png" alt="X icon" width="16" height="16">
+                        <span>Följ mig på X</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marcus-patrick-stromberg/" class="social-link">
+                        <img src="Assets/linkedin-icon.png" alt="LinkedIn icon" width="16" height="16">
+                        <span>Följ mig på LinkedIn</span>
+                    </a>
+                    <a href="https://www.stromberg.design/" class="social-link">
+                        <img src="Assets/website-icon.png" alt="Website icon" width="16" height="16">
+                        <span>Besök stromberg.design</span>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Behandling av personuppgifter</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -516,6 +516,10 @@ h2 {
 }
 
 .reverse .text-media-content .media-content {
+    order: 0;
+}
+
+.reverse .text-media-content .text-content {
     order: -1;
 }
 
@@ -573,7 +577,7 @@ h2 {
 
 .footer-links a {
     color: var(--white);
-    text-decoration: none;
+    text-decoration: underline;
     opacity: 1;
     transition: opacity 0.2s ease;
 }
@@ -680,6 +684,7 @@ h2 {
 
     .feature-card h3 {
         font-size: 18px;
+        margin-bottom: 4px;
     }
 
     .features-grid {
@@ -756,7 +761,8 @@ h2 {
     }
 
     .calculator {
-        padding: 40px 0;
+        padding: 32px 0 40px 0;
+        margin: 0;
     }
 
     .calculator-header {
@@ -764,7 +770,8 @@ h2 {
     }
 
     .text-media {
-        padding: 40px 0;
+        padding: 40px 0 32px 0;
+        margin: 0;
     }
 
     .reverse.text-media {
@@ -781,6 +788,14 @@ h2 {
 
     .footer-logo img {
         height: 24px;
+    }
+
+    .reverse .text-media-content .media-content {
+        order: 0;
+    }
+
+    .reverse .text-media-content .text-content {
+        order: -1;
     }
 }
 
@@ -948,4 +963,82 @@ h2 {
 /* Utility Classes */
 .hidden {
     display: none !important;
+}
+
+/* Privacy Page Styles */
+.content-page {
+    padding: 40px 0 80px;
+}
+
+.content-page .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-page h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.content-page h2 {
+    font-size: 24px;
+    margin: 32px 0 16px;
+    color: var(--text-color);
+}
+
+.content-page p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.content-page ul {
+    margin-bottom: 16px;
+    padding-left: 20px;
+}
+
+.content-page li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Back Link */
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+    opacity: 0.7;
+}
+
+.back-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive styles for privacy page */
+@media (max-width: 768px) {
+    .content-page {
+        padding: 24px 0 40px;
+    }
+
+    .content-page h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .content-page h2 {
+        font-size: 20px;
+        margin: 24px 0 12px;
+    }
 }

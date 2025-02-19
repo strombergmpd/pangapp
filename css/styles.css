@@ -145,6 +145,12 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     font-weight: 500;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
 }
 
 /* Message Bar */
@@ -352,11 +358,6 @@ h2 {
 
 .app-badge {
     display: block;
-    transition: opacity 0.2s ease;
-}
-
-.app-badge:hover {
-    opacity: 0.8;
 }
 
 .app-badge img {
@@ -373,15 +374,10 @@ h2 {
 }
 
 .feature-card {
-    text-align: center;
-    padding: 40px 32px;
     background-color: var(--white);
+    padding: 40px;
     border-radius: 20px;
-    transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
+    text-align: center;
 }
 
 .feature-icon {

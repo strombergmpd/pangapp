@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pangapp.se/sitemap.xml 

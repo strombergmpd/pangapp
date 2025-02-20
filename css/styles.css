@@ -552,7 +552,6 @@ h2 {
 .footer {
     padding: 32px 0;
     background-color: var(--text-color);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-logo {
@@ -670,6 +669,15 @@ h2 {
 
     .hero-text h1 {
         font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .hero-text p {
+        margin-bottom: 16px;
+    }
+
+    .hero-features {
+        margin-bottom: 24px;
     }
 
     .email-signup {
@@ -986,6 +994,99 @@ h2 {
 /* Utility Classes */
 .hidden {
     display: none !important;
+}
+
+/* Index CTA Section */
+.index-cta {
+    padding: 80px 0;
+    background-color: var(--text-color);
+    text-align: center;
+}
+
+.index-cta-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    padding: 60px 40px;
+}
+
+.index-cta h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.index-cta p {
+    margin-bottom: 32px;
+    opacity: 0.8;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.index-cta .email-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.index-cta .mc-field-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.index-cta .email-signup input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.index-cta .gdpr-group {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.index-cta .gdpr-group label {
+    color: var(--text-color);
+}
+
+.index-cta .button {
+    margin: 20px auto 0;
+    display: block;
+    width: fit-content;
+    background-color: var(--text-color);
+    color: var(--white);
+}
+
+.index-cta .signup-response.success {
+    background-color: rgba(232, 245, 233, 0.9);
+}
+
+.index-cta .signup-response.error {
+    background-color: rgba(255, 235, 238, 0.9);
+}
+
+@media (max-width: 768px) {
+    .index-cta-content {
+        padding: 40px 20px;
+    }
+
+    .index-cta h2 {
+        font-size: 28px;
+    }
 }
 
 /* Privacy Page Styles */

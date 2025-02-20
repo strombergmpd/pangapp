@@ -1092,6 +1092,11 @@ h2 {
     .index-cta h2 {
         font-size: 28px;
     }
+
+    .index-cta .button {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 /* Privacy Page Styles */

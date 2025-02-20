@@ -1082,6 +1082,7 @@ h2 {
 @media (max-width: 768px) {
     .index-cta-content {
         padding: 40px 20px;
+        margin: 0 20px;
     }
 
     .index-cta h2 {

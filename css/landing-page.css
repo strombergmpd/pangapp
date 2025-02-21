@@ -1,0 +1,264 @@
+/* Import base styles */
+@import url('../../css/styles.css');
+
+/* Landing page specific styles */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+    opacity: 0.7;
+}
+
+/* Remove underline from buttons that are links */
+a.button {
+    text-decoration: none;
+}
+
+/* Landing page hero modifications */
+.landing-hero {
+    padding: 60px 0;
+}
+
+.hero-text .button {
+    margin-top: 20px;
+}
+
+/* Features section styling */
+.features {
+    background-color: var(--bg-color);
+}
+
+/* Steps list styling */
+.steps-list {
+    list-style: none !important;
+    counter-reset: steps;
+    margin: 24px 0;
+    padding: 0;
+}
+
+.steps-list + .button {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.steps-list li {
+    counter-increment: steps;
+    display: flex;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.steps-list li::before {
+    content: counter(steps) !important;
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #0C3237 !important;
+    color: #ffffff !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: var(--font-body);
+    border: none !important;
+    background-image: none !important;
+}
+
+/* FAQ section styling */
+.faq {
+    padding: 80px 0;
+    background-color: var(--bg-color);
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(12, 50, 55, 0.08);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CTA section styling */
+.cta {
+    padding: 80px 0;
+    background-color: var(--text-color);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #D8EFEF;
+    border-radius: 20px;
+    padding: 60px 40px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 0;
+}
+
+.cta p {
+    margin-bottom: 32px;
+    opacity: 0.8;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.cta .email-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta .mc-field-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.cta .email-signup input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.cta .gdpr-group {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.cta .gdpr-group label {
+    color: var(--text-color);
+}
+
+.cta .button {
+    margin: 20px auto 0;
+    display: block;
+    width: fit-content;
+    background-color: var(--text-color);
+    color: var(--white);
+}
+
+.cta .signup-response.success {
+    background-color: rgba(232, 245, 233, 0.9);
+}
+
+.cta .signup-response.error {
+    background-color: rgba(255, 235, 238, 0.9);
+}
+
+/* Solution list styling */
+.solution-list {
+    list-style: none;
+    margin: 24px 0;
+}
+
+.solution-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.solution-list li::before {
+    content: "";
+    background-image: url('../../Assets/check-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .faq h2,
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .landing-hero {
+        padding: 40px 0;
+    }
+
+    .steps-list li {
+        padding-left: 32px;
+    }
+
+    .steps-list li::before {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    .cta-content {
+        padding: 40px 20px;
+    }
+} 

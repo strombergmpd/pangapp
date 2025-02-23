@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}} | Päng</title>
+    <meta name="description" content="{{PAGE_DESCRIPTION}}">
+    <meta name="keywords" content="{{PAGE_KEYWORDS}}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pangapp.se/{{PAGE_URL}}">
+    <meta property="og:title" content="{{PAGE_TITLE}} | Päng">
+    <meta property="og:description" content="{{PAGE_DESCRIPTION}}">
+    <meta property="og:image" content="https://pangapp.se/Assets/pang-social-share.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pangapp.se/{{PAGE_URL}}">
+    <meta property="twitter:title" content="{{PAGE_TITLE}} | Päng">
+    <meta property="twitter:description" content="{{PAGE_DESCRIPTION}}">
+    <meta property="twitter:image" content="https://pangapp.se/Assets/pang-social-share.png">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Assets/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Assets/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Assets/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <meta name="theme-color" content="#0C3237">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="landing-page.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{{PAGE_TITLE}}",
+      "description": "{{PAGE_DESCRIPTION}}",
+      "url": "https://pangapp.se/{{PAGE_URL}}",
+      "mainEntity": {
+        "@type": "Article",
+        "headline": "{{PAGE_TITLE}}",
+        "description": "{{PAGE_DESCRIPTION}}",
+        "author": {
+          "@type": "Person",
+          "name": "Marcus Strömberg"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Message Bar -->
+    <div class="message-bar">
+        <p>OBS! All din data är 100% privat.</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../../" class="logo">
+                <img src="../../Assets/Pang-logo-teal.svg" alt="Päng logo">
+            </a>
+            <a href="../../" class="back-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Tillbaka till startsidan
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero landing-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>{{HERO_TITLE}}</h1>
+                    <p>{{HERO_DESCRIPTION}}</p>
+                    <ul class="hero-features">
+                        <li>{{USP_1}}</li>
+                        <li>{{USP_2}}</li>
+                        <li>{{USP_3}}</li>
+                    </ul>
+                    <a href="../../" class="button">{{CTA_TEXT}}</a>
+                </div>
+                <div class="hero-image">
+                    <div class="video-wrapper">
+                        <video width="100%" autoplay loop muted playsinline>
+                            <source src="https://pangwebsite.s3.eu-north-1.amazonaws.com/pang-demo.mp4" type="video/mp4">
+                            Din webbläsare stödjer inte HTML5-video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="text-media">
+        <div class="container">
+            <div class="text-media-content">
+                <div class="text-content">
+                    <h2>{{PROBLEM_TITLE}}</h2>
+                    <p>{{PROBLEM_DESCRIPTION}}</p>
+                    <ul class="solution-list">
+                        <li>{{SOLUTION_1}}</li>
+                        <li>{{SOLUTION_2}}</li>
+                        <li>{{SOLUTION_3}}</li>
+                    </ul>
+                </div>
+                <div class="media-content">
+                    <img src="../../Assets/using-pang-app.jpg" alt="Example image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Benefits Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2>{{FEATURES_TITLE}}</h2>
+                <p>{{FEATURES_DESCRIPTION}}</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="../../Assets/savings.svg" alt="Feature 1 icon">
+                    </div>
+                    <h3>{{FEATURE_1_TITLE}}</h3>
+                    <p>{{FEATURE_1_DESCRIPTION}}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="../../Assets/privacy.svg" alt="Feature 2 icon">
+                    </div>
+                    <h3>{{FEATURE_2_TITLE}}</h3>
+                    <p>{{FEATURE_2_DESCRIPTION}}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="../../Assets/face.svg" alt="Feature 3 icon">
+                    </div>
+                    <h3>{{FEATURE_3_TITLE}}</h3>
+                    <p>{{FEATURE_3_DESCRIPTION}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="text-media reverse">
+        <div class="container">
+            <div class="text-media-content">
+                <div class="text-content">
+                    <h2>{{HOW_IT_WORKS_TITLE}}</h2>
+                    <p>{{HOW_IT_WORKS_DESCRIPTION}}</p>
+                    <ol class="steps-list">
+                        <li>{{STEP_1}}</li>
+                        <li>{{STEP_2}}</li>
+                        <li>{{STEP_3}}</li>
+                    </ol>
+                    <a href="#cta" class="button">{{CTA_TEXT}}</a>
+                </div>
+                <div class="media-content">
+                    <img src="../../Assets/using-pang-app.jpg" alt="How it works image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>{{FAQ_TITLE}}</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>{{FAQ_1_QUESTION}}</h3>
+                    <p>{{FAQ_1_ANSWER}}</p>
+                </div>
+                <div class="faq-item">
+                    <h3>{{FAQ_2_QUESTION}}</h3>
+                    <p>{{FAQ_2_ANSWER}}</p>
+                </div>
+                <div class="faq-item">
+                    <h3>{{FAQ_3_QUESTION}}</h3>
+                    <p>{{FAQ_3_ANSWER}}</p>
+                </div>
+                <div class="faq-item">
+                    <h3>{{FAQ_4_QUESTION}}</h3>
+                    <p>{{FAQ_4_ANSWER}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>{{FINAL_CTA_TITLE}}</h2>
+                <p>{{FINAL_CTA_DESCRIPTION}}</p>
+                <form action="https://gmail.us9.list-manage.com/subscribe/post?u=cc17af8959840de806baa7bdb&amp;id=cfd98eab6f&amp;f_id=00bb57e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="email-signup validate">
+                    <div class="mc-field-group">
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Din e-postadress" required>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_cc17af8959840de806baa7bdb_cfd98eab6f" tabindex="-1" value="">
+                        </div>
+                        <div class="gdpr-group">
+                            <input type="checkbox" id="gdpr_consent" name="gdpr[37841]" value="Y" required>
+                            <label for="gdpr_consent">Jag godkänner att Päng skickar information via e-post. Du kan när som helst avregistrera dig.</label>
+                        </div>
+                    </div>
+                    <button type="submit" name="subscribe" class="button">{{CTA_BUTTON_TEXT}}</button>
+                    <div id="signup-response" class="signup-response"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../../Assets/pang-logo-white.svg" alt="Päng logo">
+            </div>
+            <div class="footer-disclaimer">
+                <p>Denna tjänst tillhandahåller endast information och verktyg för ekonomisk planering. Vi erbjuder inte finansiell rådgivning, och vi ansvarar inte för eventuella beslut baserade på den information som presenteras i appen. För personlig finansiell rådgivning, kontakta en licensierad rådgivare.</p>
+            </div>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://x.com/MarcusStrmberg" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <img src="../../Assets/x-icon.png" alt="X icon" width="16" height="16">
+                        <span>Följ mig på X</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marcus-patrick-stromberg/" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <img src="../../Assets/linkedin-icon.png" alt="LinkedIn icon" width="16" height="16">
+                        <span>Följ mig på LinkedIn</span>
+                    </a>
+                    <a href="https://www.stromberg.design/" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <img src="../../Assets/website-icon.png" alt="Website icon" width="16" height="16">
+                        <span>Besök stromberg.design</span>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="../../cookie-policy">Behandling av personuppgifter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

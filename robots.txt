@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /templates/
+Disallow: /_private/
 Sitemap: https://pangapp.se/sitemap.xml 

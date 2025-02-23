@@ -176,6 +176,57 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <h2>Välj den plan som passar dig bäst</h2>
+                <p>Päng är gratis och du får alla grundläggande funktioner du behöver för att komma igång. För dig som vill ha mer avancerade funktioner jobbar vi på att erbjuda en premiumversion i framtiden.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <span class="plan-label">BAS</span>
+                        <h3 class="plan-price">Gratis</h3>
+                        <p class="plan-description">För dig som vill ha koll på din ekonomi.</p>
+                    </div>
+                    <div class="plan-features">
+                        <h4>FUNKTIONER</h4>
+                        <ul>
+                            <li>Sätt ett sparmål och se när du når det</li>
+                            <li>Tydliga grafer för enkel översikt</li>
+                            <li>Översikt av lön och andra inkomster</li>
+                            <li>Spara återkommande inkomster</li>
+                            <li>Översikt av utgifter</li>
+                            <li>Spara återkommande utgifter</li>
+                            <li>Se din sparkvot för månad och år</li>
+                            <li>Översikt av fasta och likvida tillgångar</li>
+                            <li>Se totalt värde av likvida och fasta tillgångar</li>
+                            <li>Få historisk utveckling av din ekonomi över tid</li>
+                        </ul>
+                    </div>
+                    <button class="button basic-notify">Skriv upp mig på väntelistan</button>
+                </div>
+                <div class="pricing-card premium">
+                    <div class="pricing-card-header">
+                        <span class="plan-label">PREMIUM</span>
+                        <h3 class="plan-price">Kommer snart</h3>
+                        <p class="plan-description">För dig som vill ha mer avancerade funktioner planerar vi att lansera en premiumversion i framtiden.</p>
+                    </div>
+                    <div class="plan-features">
+                        <h4>ALLT I BAS PLUS</h4>
+                        <ul>
+                            <li>Bolånekalkylator</li>
+                            <li>Räkna ut hur mycket du kan spara på ditt bolån</li>
+                            <li>Jämför listräntor och genomsnittsräntor</li>
+                        </ul>
+                    </div>
+                    <a href="#cta" class="button premium-notify">Meddela mig när det kommer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Calculator Section -->
     <section class="calculator">
         <div class="container">
@@ -313,6 +364,54 @@
             </div>
         </div>
     </footer>
+
+    <!-- Add the new basic modal before the premium modal -->
+    <div id="basic-modal" class="modal">
+        <div class="modal-content">
+            <h3>Få besked när Päng lanseras</h3>
+            <p>Vi meddelar dig så fort appen finns tillgänglig.</p>
+            <form action="https://gmail.us9.list-manage.com/subscribe/post?u=cc17af8959840de806baa7bdb&amp;id=cfd98eab6f&amp;f_id=00bb57e1f0" method="post" id="mc-embedded-subscribe-form-basic" name="mc-embedded-subscribe-form" class="email-signup validate">
+                <div class="mc-field-group">
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL-basic" placeholder="Din e-postadress" required>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_cc17af8959840de806baa7bdb_cfd98eab6f" tabindex="-1" value="">
+                    </div>
+                    <div class="gdpr-group">
+                        <input type="checkbox" id="gdpr_consent-basic" name="gdpr[37841]" value="Y" required>
+                        <label for="gdpr_consent-basic">Jag godkänner att Päng skickar information via e-post. Du kan när som helst avregistrera dig.</label>
+                    </div>
+                </div>
+                <button type="submit" name="subscribe" class="button">Anmäl mig</button>
+                <div id="signup-response-basic" class="signup-response"></div>
+            </form>
+            <button class="modal-close" aria-label="Stäng">&times;</button>
+        </div>
+    </div>
+
+    <!-- Premium Modal -->
+    <div id="premium-modal" class="modal">
+        <div class="modal-content">
+            <h3>Få besked när Premium lanseras</h3>
+            <p>Vi meddelar dig så fort Premium-versionen finns tillgänglig.</p>
+            <form action="https://gmail.us9.list-manage.com/subscribe/post?u=cc17af8959840de806baa7bdb&amp;id=cfd98eab6f&amp;f_id=00bb57e1f0" method="post" id="mc-embedded-subscribe-form-premium" name="mc-embedded-subscribe-form" class="email-signup validate">
+                <div class="mc-field-group">
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL-premium" placeholder="Din e-postadress" required>
+                    <!-- Remove group field and keep only tag -->
+                    <input type="hidden" name="tags" value="premium-interest">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_cc17af8959840de806baa7bdb_cfd98eab6f" tabindex="-1" value="">
+                    </div>
+                    <div class="gdpr-group">
+                        <input type="checkbox" id="gdpr_consent-premium" name="gdpr[37841]" value="Y" required>
+                        <label for="gdpr_consent-premium">Jag godkänner att Päng skickar information via e-post. Du kan när som helst avregistrera dig.</label>
+                    </div>
+                </div>
+                <button type="submit" name="subscribe" class="button">Meddela mig</button>
+                <div id="signup-response-premium" class="signup-response"></div>
+            </form>
+            <button class="modal-close" aria-label="Stäng">&times;</button>
+        </div>
+    </div>
 
     <script src="js/calculator.js"></script>
     <script src="js/signup.js"></script>

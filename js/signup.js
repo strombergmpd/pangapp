@@ -68,17 +68,24 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             const formData = new FormData(form);
-            const jsonData = {};
-            formData.forEach((value, key) => jsonData[key] = value);
+            
+            // Get the base URL from the form's action attribute
+            let url = form.action;
+
+            // Check if this is the premium form and add the tag
+            if (form.id === 'mc-embedded-subscribe-form-premium') {
+                // Add the tags parameter to the URL
+                url = url + '&tags=premium-interest';
+            }
+
+            // Add callback parameter for JSONP
+            url = url + '&c=?';
 
             // Convert form data to URL-encoded string
             const searchParams = new URLSearchParams();
             for (const pair of formData) {
                 searchParams.append(pair[0], pair[1]);
             }
-
-            // Add callback parameter for JSONP
-            const url = form.action + '&c=?';
 
             // Show loading state
             const button = form.querySelector('button[type="submit"]');
